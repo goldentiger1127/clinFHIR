@@ -8,7 +8,9 @@ pipeline {
         }
 
         stage('run') {
-            sh './startServer.sh'
+            steps {
+                sh './startServer.sh'
+            }
         }
     }
 }
