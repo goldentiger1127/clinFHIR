@@ -9,7 +9,7 @@ pipeline {
 
         stage('run') {
             steps {
-                sh './startServer.sh'
+                sh 'echo "hello world"'
             }
         }
     }
